@@ -1,0 +1,137 @@
+.claim {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: -80px;
+  padding: 280px 0 200px 0;
+  background: linear-gradient(rgba(112, 179, 84, .5), rgba(112, 179, 84, .5)), url("/img/claim-colored.png");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto 150%;
+
+  @media (min-width: 576px) {
+    padding: 305px 0 200px 0;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: unset;
+    padding: 250px 0 200px 0;
+  }
+
+  @media (min-width: 1600px) {
+    padding-top: 250px;
+  }
+
+  h1 {
+    padding: 0 15px;
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+
+    @media (min-width: 576px) {
+      font-size: 40px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 42px;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 44px;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 48px;
+    }
+  }
+
+  h2 {
+    margin-top: 5px;
+    padding: 0 15px;
+    color: white;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+
+    @media (min-width: 576px) {
+      font-size: 28px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 32px;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 36px;
+    }
+  }
+
+  .btn-wrapper-outer {
+    margin-top: 35px;
+    padding: 7px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, .1);
+
+    @media (min-width: 576px) {
+      padding: 8px;
+    }
+
+    @media (min-width: 768px) {
+      padding: 9px;
+    }
+  }
+
+  .btn-wrapper-inner {
+    padding: 7px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .2);
+
+    @media (min-width: 576px) {
+      padding: 8px;
+    }
+
+    @media (min-width: 768px) {
+      padding: 9px;
+    }
+  }
+
+  .btn {
+    position: relative;
+    padding: 12px 20px 10px 20px;
+    border-radius: 15px;
+    background: #fff;
+    color: $primary;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    @media (min-width: 992px) {
+      padding: 14px 22px 12px 22px;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      background: #eee;
+    }
+
+    &::after {
+      content: '';
+      @include full-size-absoluted;
+      transition: opacity .2s;
+      box-shadow: 0 0 41px 5px rgba(255, 255, 255, 0.21);
+      opacity: 0;
+    }
+  }
+}

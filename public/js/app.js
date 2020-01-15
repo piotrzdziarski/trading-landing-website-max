@@ -90,25 +90,52 @@
 /*!***********************!*\
   !*** ./src/js/app.js ***!
   \***********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bootstrap */ "./src/js/bootstrap.js");
-/* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_bootstrap__WEBPACK_IMPORTED_MODULE_0__);
-
+__webpack_require__(/*! ./includes/nav-control */ "./src/js/includes/nav-control.js");
 
 /***/ }),
 
-/***/ "./src/js/bootstrap.js":
-/*!*****************************!*\
-  !*** ./src/js/bootstrap.js ***!
-  \*****************************/
+/***/ "./src/js/includes/nav-control.js":
+/*!****************************************!*\
+  !*** ./src/js/includes/nav-control.js ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+var hamburger = document.getElementById('hamburger');
+var hamburgerInner = document.getElementById('hamburger-inner');
+var collapse = document.getElementById('collapse');
+var collapseHeight;
+addEventListener('load', function () {
+  if (innerWidth < 768) {
+    setUpCollapse();
+  }
+});
 
+hamburger.onclick = function () {
+  if (hamburgerInner.classList.contains('active')) {
+    collapse.style.maxHeight = '0';
+    hamburgerInner.classList.remove('active');
+    collapse.classList.remove('active');
+  } else {
+    collapse.style.maxHeight = collapseHeight + 'px';
+    hamburgerInner.classList.add('active');
+    collapse.classList.add('active');
+  }
+};
+
+addEventListener('resize', function () {
+  if (!collapseHeight && innerWidth < 768) {
+    setUpCollapse();
+  }
+});
+
+function setUpCollapse() {
+  collapseHeight = collapse.offsetHeight;
+  collapse.style.maxHeight = '0';
+}
 
 /***/ }),
 
@@ -130,8 +157,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/piotrzdziarski/projects/laravel-mix-template/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /home/piotrzdziarski/projects/laravel-mix-template/src/scss/app.scss */"./src/scss/app.scss");
+__webpack_require__(/*! /home/piotrzdziarski/projects/fireads/trading-landing-website-bartek/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /home/piotrzdziarski/projects/fireads/trading-landing-website-bartek/src/scss/app.scss */"./src/scss/app.scss");
 
 
 /***/ })

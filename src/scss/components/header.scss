@@ -1,0 +1,17 @@
+.header {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: -4%;
+    width: 108%;
+    height: 15px;
+    background: $primary;
+    z-index: -1;
+  }
+}

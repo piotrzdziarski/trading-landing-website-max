@@ -1,0 +1,118 @@
+.about {
+  padding: 50px 0 40px 0;
+
+  @media (min-width: 768px) {
+    padding: 50px 0 40px 0;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 35px 0 40px 0;
+  }
+
+  .container {
+    @media (min-width: 1600px) {
+      max-width: 1250px;
+    }
+  }
+
+  .img-wrapper {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: calc(135vw);
+    max-width: 348px;
+    max-height: 490px;
+
+    @media (min-width: 768px) {
+      max-width: unset;
+      max-height: unset;
+      width: 324px;
+      height: unset;
+    }
+
+    @media (min-width: 992px) {
+      width: 380px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 448px;
+    }
+  }
+
+  .img-backgrounded {
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 98px rgba(0, 0, 0, 0.25);
+    background: url("/img/about.png");
+    background-size: cover;
+    background-position: 88%;
+
+    @media (min-width: 768px) {
+      height: 470px;
+    }
+
+    @media (min-width: 992px) {
+      height: 520px;
+      background-position: 90%;
+    }
+
+    @media (min-width: 1200px) {
+      position: absolute;
+      left: 0;
+      top: -340px;
+      height: 607px;
+    }
+
+    @media (min-width: 1600px) {
+      top: -330px;
+    }
+  }
+
+  .divider {
+    @media (min-width: 768px) {
+      width: 40px;
+    }
+
+    @media (min-width: 992px) {
+      width: 50px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 60px;
+    }
+  }
+
+  .block-description {
+    margin-top: 40px;
+
+    @media (min-width: 576px) {
+      margin-top: 45px;
+    }
+
+    @media (min-width: 768px) {
+      margin-top: unset;
+      width: calc(100% - 364px);
+    }
+
+    @media (min-width: 992px) {
+      width: calc(100% - 430px);
+    }
+
+    @media (min-width: 1200px) {
+      width: calc(100% - 508px);
+    }
+  }
+
+  .p {
+    padding-top: 10px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 24px;
+
+    &:first-of-type {
+      padding-top: 5px;
+    }
+  }
+}

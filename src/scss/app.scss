@@ -1,10 +1,27 @@
-@import "./demo.scss";
+@import "variables";
+@import "mixins";
+@import "global/buttons";
+@import "global/flex";
+@import "global/headers";
+@import "global/widths";
+@import "components/container";
+@import "components/header";
+@import "includes/nav";
+@import "includes/claim";
+@import "includes/about";
 
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
 }
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
