@@ -3,13 +3,15 @@
   position: relative;
   font-size: 30px;
   font-weight: 700;
+  text-align: center;
+  z-index: 1;
 
   &::after {
     content: '';
     position: absolute;
     bottom: 5px;
-    left: -4%;
-    width: 108%;
+    left: -8px;
+    width: calc(100% + 16px);
     height: 15px;
     background: $primary;
     z-index: -1;
