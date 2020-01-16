@@ -1,0 +1,244 @@
+.start-earning {
+  padding: 25px 0 60px 0;
+
+  @media (min-width: 576px) {
+    padding: 25px 0 70px 0;
+  }
+
+  @media (min-width: 768px) {
+    padding: 35px 0 70px 0;
+  }
+
+  @media (min-width: 992px) {
+    padding: 40px 0 80px 0;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 40px 0 90px 0;
+  }
+
+  @media (min-width: 1600px) {
+    padding: 50px 0 100px 0;
+
+  }
+
+  .start-earning-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+
+    @media (min-width: 576px) {
+      margin-top: 70px;
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 55px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-top: 65px;
+      align-items: flex-start;
+    }
+
+    @media (min-width: 1600px) {
+      margin-top: 75px;
+      max-width: 1250px;
+    }
+  }
+
+  .images {
+    margin: 30px auto 0 auto;
+    width: 100%;
+    max-width: 660px;
+
+    @media (min-width: 576px) {
+      margin: 40px auto 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      margin: unset;
+      width: 310px;
+    }
+
+    @media (min-width: 992px) {
+      width: 406px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 550px;
+    }
+
+    @media (min-width: 1600px) {
+      width: 640px;
+    }
+  }
+
+  .divider-img {
+    width: 20px;
+  }
+
+  .img {
+    width: calc(50% - 10px);
+    border-radius: 25px;
+    box-shadow: 0 0 98px rgba(0, 0, 0, 0.25);
+  }
+
+  .divider {
+    @media (min-width: 768px) {
+      width: 35px;
+    }
+
+    @media (min-width: 992px) {
+      width: 50px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 55px;
+    }
+  }
+
+  .block-text {
+    @media (min-width: 768px) {
+      width: calc(100% - 345px);
+    }
+
+    @media (min-width: 992px) {
+      width: calc(100% - 456px);
+    }
+
+    @media (min-width: 1200px) {
+      width: calc(100% - 605px);
+    }
+
+    @media (min-width: 1600px) {
+      width: calc(100% - 660px);
+    }
+  }
+
+  .p {
+    font-size: 14px;
+    margin-top: 40px;
+    line-height: 26px;
+
+    @media (min-width: 576px) {
+      margin-top: 50px;
+    }
+
+    @media (min-width: 768px) {
+      margin-top: unset;
+    }
+
+    @media (min-width: 1200px) {
+      margin-top: 30px;
+    }
+  }
+
+  .p-bolded {
+    margin-top: 20px;
+    color: $primary;
+    font-size: 19px;
+
+    @media (min-width: 576px) {
+      margin-top: 25px;
+    }
+  }
+
+  #form {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+    height: 45px;
+
+    @media (min-width: 576px) {
+      margin-top: 25px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-top: 30px;
+      height: 48px;
+    }
+  }
+
+  .input {
+    padding: 10px 20px 10px 50px;
+    border: 2px solid transparent;
+    border-radius: 18px;
+    width: calc(100% - 90px);
+    height: 100%;
+    background-color: #dfdfdf;
+    transition: border .05s;
+    font-size: 14px;
+
+    @media (min-width: 576px) {
+      width: auto;
+    }
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #000;
+    }
+
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: #000;
+    }
+
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: #000;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+      color: #000;
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px solid $primary;
+    }
+  }
+
+  .error {
+    border: 2px solid #ff5d73;
+  }
+
+  .label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-40%);
+  }
+
+  #submit-btn {
+    margin-left: 10px;
+    padding: 2px 16px 0 16px;
+    text-transform: uppercase;
+    width: 90px;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 18px;
+    font-size: 16px;
+    font-weight: 700;
+
+    @media (min-width: 576px) {
+      width: auto;
+      padding: 2px 20px 0 20px;
+    }
+
+    @media (min-width: 992px) {
+      padding: 2px 25px 0 25px;
+      letter-spacing: 1.92px;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 2px 30px 0 30px;
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px solid #67a54e;
+    }
+  }
+}

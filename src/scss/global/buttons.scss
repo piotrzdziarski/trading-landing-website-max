@@ -1,8 +1,8 @@
 .btn {
   display: inline-block;
-  font-weight: 700;
   cursor: pointer;
   border: unset;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -10,7 +10,6 @@
   border-radius: 30px;
   background: $primary;
   color: #fff;
-  font-family: 'Myriad Pro Bold', sans-serif;
   font-size: 20px;
 
   @media (min-width: 576px) {
@@ -22,7 +21,6 @@
   border-radius: 30px;
   background: white;
   color: $primary;
-  font-family: 'Myriad Pro Bold', sans-serif;
   font-size: 20px;
 
   @media (min-width: 576px) {
