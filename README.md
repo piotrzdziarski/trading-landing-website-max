@@ -1,9 +1,7 @@
 # Trading landing website
 
-Bartek polecajacy krypto.
+Simple HTML page.
+
+Max says how awesome trading is.
 
 Uses Laravel Mix.
-
-Technologies:
-- scss
-- js

@@ -62,7 +62,7 @@
 
     @media (min-width: 1200px) {
       margin-bottom: unset;
-      width: calc(50% - 5px);
+      width: calc(50% - 12.5px);
     }
 
     &:last-child {
@@ -76,31 +76,25 @@
     @media (min-width: 768px) {
       width: 25px;
     }
-
-    @media (min-width: 1200px) {
-      width: 10px;
-    }
-
-    @media (min-width: 1600px) {
-      width: 25px;
-    }
   }
 
   .hg-divider {
     @media (min-width: 1200px) {
-      width: 10px;
-    }
-
-    @media (min-width: 1600px) {
       width: 25px;
     }
   }
 
   img {
+    width: 307px;
+    height: 630px;
     margin-bottom: 40px;
 
     @media (min-width: 768px) {
       margin-bottom: unset;
+    }
+
+    @media (min-width: 1200px) {
+      width: calc(50% - 12.5px);
     }
   }
 
